@@ -23,17 +23,15 @@ function whileLoop(number){
 
 
 
+function maybeTrue() {
+  return Math.random() >= 0.5
+}
 function doWhileLoop(array){
-  function maybeTrue() {
-  return Math.random() > 0;
-  }
-  do {
+  do{
     array.pop();
-  } while ([`array.length > 0 && maybeTrue()`]);
-  return array;
-} 
-
-
+  } while(array.length > 0 && maybeTrue())
+  return array
+}
 
 
 
